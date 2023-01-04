@@ -1,4 +1,4 @@
-.header {
+.header, .footer {
     background-color: #1f2937;
 }
 
@@ -67,7 +67,6 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -79,11 +78,35 @@ h3 {
 
 .info {
     display: flex;
-    justify-content: space-around;
     outline: solid red;    
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     outline: solid red;
     text-align: center;
+    margin: 0 48px;
+}
+
+.body {
+    background-color: #e5e7eb;
+    outline: solid red;
+}
+
+.notice {
+    outline: solid red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #e5e7eb;
+}
+
+.copy {
+    font-size: 18px;
 }
