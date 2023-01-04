@@ -1,8 +1,7 @@
 body {
-    outline: solid red;
     display: flex;
-    flex-flow: column wrap;
     margin: 0;
+    flex-direction: column;
 }
 
 .header, .footer {
@@ -11,9 +10,9 @@ body {
 
 .header {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    outline: solid red;
 }
 
 .top-content {
@@ -21,7 +20,6 @@ body {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    outline: solid red;
 }
 
 h1 {
@@ -54,6 +52,7 @@ a {
 
 .media {
     display: flex;
+    align-self: center;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
@@ -69,15 +68,16 @@ a {
     max-width: 400px;
 }
 
-img {
-    background-color: gray;
-}
-
 .image {
-    outline: solid red;
     min-width: 400px;
     min-height: 200px;
     margin: 0 32px;
+}
+
+img {
+    background-color: gray;
+    max-width: auto;
+    max-height: 200px;
 }
 
 .container {
@@ -94,25 +94,35 @@ h3 {
 
 .info {
     display: flex;
-    outline: solid red;    
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: solid red;
     text-align: center;
     margin: 0 48px;
+    max-width: 200px;
+}
+
+.text {
+    outline: solid red;
+    margin: 0 30px;
 }
 
 .body {
     background-color: #e5e7eb;
-    outline: solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .notice {
+    display: flex;
+    flex-flow: column wrap;
     outline: solid red;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -121,8 +131,11 @@ h3 {
     justify-content: flex-end;
     align-items: center;
     color: #e5e7eb;
+    padding: 24px;
+
 }
 
 .copy {
     font-size: 18px;
+
 }
