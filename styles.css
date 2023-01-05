@@ -13,15 +13,14 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .top-content {
     display: flex;
-    flex: 1;
     justify-content: space-between;
     align-items: center;
-    outline: solid red;
-    margin: 0 520px;
+    width: 860px;
 }
 
 h1 {
@@ -43,13 +42,17 @@ ul {
 }
 
 li {
-    margin: 0 8px;
+    margin-left: 16px;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb
+}
+
+button {
+    border-radius: 8px;
 }
 
 .media {
@@ -67,13 +70,13 @@ a {
     flex-wrap: wrap;
     font-size: 18px;
     color: #e5e7eb;
-    max-width: 400px;
+    width: 400px;
 }
 
 .image {
-    min-width: 400px;
-    min-height: 200px;
-    margin: 0 32px;
+    width: 400px;
+    height: 200px;
+    margin: 0 0 0 60px;
 }
 
 img {
@@ -96,6 +99,8 @@ h3 {
 
 .info {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly
 }
 
 .card {
@@ -103,8 +108,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 24px;
-    max-width: 200px;
+    width: 200px;
+    margin: auto;
 }
 
 .text {
@@ -116,26 +121,51 @@ h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 100px 575px;
+    padding: 75px 0;
 }
 
 .quote {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
-    color: #1f2937
+    color: #1f2937;
+    width: 750px;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 .words {
     font-size: 36px;
+    font-weight: 100;
     font-style: italic;
 }
 
+.notice-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .notice {
+    margin: 75px;
+    background-color: #3882f6;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    width: 800px;
+    border-radius: 10px;
+    color: #e5e7eb;
+    padding: 50px;
+    height: 50px;
+}
+
+.notice p {
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
@@ -145,10 +175,8 @@ h3 {
     align-items: center;
     color: #e5e7eb;
     padding: 24px;
-
 }
 
 .copy {
     font-size: 18px;
-
 }
