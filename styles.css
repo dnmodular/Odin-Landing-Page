@@ -12,15 +12,17 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    align-content: space-around;
+    padding-bottom: 75px;
 }
 
 .top-content {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
     align-items: center;
-    width: 860px;
+    align-content: space-between;
+    max-width: 860px;
 }
 
 h1 {
@@ -53,6 +55,16 @@ a {
 
 button {
     border-radius: 8px;
+    color: white;
+    background-color: #3882f6;
+}
+
+button.buttonA {
+    border: none;
+}
+
+button.buttonB {
+    border: 1px solid white;
 }
 
 .media {
@@ -61,7 +73,10 @@ button {
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
+
+
 
 .content {
     display: flex;
@@ -71,6 +86,8 @@ button {
     font-size: 18px;
     color: #e5e7eb;
     width: 400px;
+    margin: 0;
+    padding: 0;
 }
 
 .image {
@@ -89,6 +106,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 75px;
 }
 
 h3 {
@@ -180,3 +198,4 @@ h3 {
 .copy {
     font-size: 18px;
 }
+
